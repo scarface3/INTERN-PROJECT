@@ -66,8 +66,8 @@ const Card = (props) => {
   // if (Object.entries(order).length === 0) {
   //   return;
   // }
-  const TotalPrice = order.items.reduce((e, u) => e + u.price, 0);
-  const TotalTax = order.items.reduce((e, u) => e + u.tax_pct, 0);
+  const TotalPrice = order.items.reduce((e, u) => e + u.price * u.quantity, 0);
+  const TotalTax = order.items.reduce((e, u) => e + u.tax_pct * u.quantity, 0);
   const ToTaxAmount = (TotalTax / 100) * TotalPrice;
   return (
     <div className={classes.wrapper}>
