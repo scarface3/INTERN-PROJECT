@@ -93,23 +93,3 @@ body {
   margin-bottom: 10px;
   color: #919aa3;
 }
-
-.wrapper .social_media ul {
-  display: flex;
-}
-
-.wrapper .social_media ul li {
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(to right, #01a9ac, #01dbdf);
-  margin-right: 10px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 45px;
-}
-
-.wrapper .social_media ul li a {
-  color: #fff;
-  display: block;
-  font-size: 18px;
-}
