@@ -68,7 +68,7 @@ const ProfilePage = () => {
   // }
   const TotalPrice = order.items.reduce((e, u) => e + u.price * u.quantity, 0);
   const TotalTax = order.items.reduce((e, u) => e + u.tax_pct * u.quantity, 0);
-  const ToTaxAmount = (TotalTax / 100) * TotalPrice;
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.left}>
