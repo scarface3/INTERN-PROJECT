@@ -67,21 +67,12 @@ const Card = (props) => {
   //   return;
   // }
   const TotalPrice = order.items.reduce((e, u) => e + u.price * u.quantity, 0);
+
   const TotalTax = order.items.reduce((e, u) => e + u.tax_pct * u.quantity, 0);
-  const ToTaxAmount = (TotalTax / 100) * TotalPrice;
+  const TotalTaxAmount = (TotalTax / 100) * TotalPrice;
   return (
     <div className={classes.wrapper}>
-      <div className={classes.left}>
-        <img
-          src={
-            "https://media-exp1.licdn.com/dms/image/C5622AQG-8cIXHY6L9Q/feedshare-shrink_1280/0/1591382449311?e=1634169600&v=beta&t=vRhQq3xXl8gOnFRpjrQ4dsg_4eIVBe0pLUr0RtWzsnI"
-          }
-          alt={"user"}
-          width={"100"}
-        />
-        <h4>Eyio' Oladimeji</h4>
-        <p>Frontend Developer</p>
-      </div>
+      <div className={classes.left}></div>
       <div className={classes.right}>
         <div className={classes.info}>
           <h3>Restaurant Details</h3>
@@ -199,12 +190,12 @@ const Card = (props) => {
                 <h1>{TotalTax}%</h1>
               </div>
               <div className={classes.data}>
-                <h4>ToTax Amount</h4>
-                <h1>₹{ToTaxAmount}</h1>
+                <h4>Total Tax Amount</h4>
+                <h1>₹{TotalTaxAmount}</h1>
               </div>
               <div className={classes.data}>
                 <h4>Total Amount</h4>
-                <h1>₹{TotalPrice + ToTaxAmount}</h1>
+                <h1>₹{TotalPrice + TotalTaxAmount}</h1>
               </div>
             </div>
           </div>
