@@ -63,9 +63,7 @@ const Card = (props) => {
     }
     fetchOrder();
   }, []);
-  // if (Object.entries(order).length === 0) {
-  //   return;
-  // }
+
   const TotalPrice = order.items.reduce((e, u) => e + u.price * u.quantity, 0);
 
   const TotalTax = order.items.reduce((e, u) => e + u.tax_pct * u.quantity, 0);
