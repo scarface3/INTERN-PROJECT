@@ -27,7 +27,7 @@ body {
   width: 35%;
   height: 100%;
   background: linear-gradient(to right, #01a9ac, #01dbdf);
-  padding: 30px 25px;
+  padding: 300px 25px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   text-align: center;
@@ -50,7 +50,7 @@ body {
 .wrapper .right {
   width: 65%;
   background: #fff;
-  padding: 30px 25px;
+  padding: 100px 25px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
