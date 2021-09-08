@@ -8,15 +8,17 @@ const Navigation = (props) => {
     <nav className={classes.nav}>
       <ul>
         <li>
-          <Link to="/profile_page"> Profile </Link>
+          <Link to="/profile_page" style={{ textDecoration: "none" }}>
+            {" "}
+            Profile{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/order"> Order Summary </Link>
+          <Link to="/order" style={{ textDecoration: "none" }}>
+            {" "}
+            Order Summary{" "}
+          </Link>
         </li>
-
-        {/* <li>
-          <button onClick={handler}>Order Summary</button>
-        </li> */}
       </ul>
     </nav>
   );
