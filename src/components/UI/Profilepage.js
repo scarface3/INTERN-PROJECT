@@ -18,40 +18,6 @@ const ProfilePage = () => {
       likes: ["", "", ""],
       dislikes: ["", "", ""],
     },
-    items: [
-      {
-        name: "",
-        category: "",
-        price: "",
-        currency: "",
-        tax_pct: "",
-        quantity: "",
-      },
-      {
-        name: "",
-        category: "",
-        price: "",
-        currency: "",
-        tax_pct: "",
-        quantity: "",
-      },
-      {
-        name: "",
-        category: "",
-        price: "",
-        currency: "",
-        tax_pct: "",
-        quantity: "",
-      },
-      {
-        name: "",
-        category: "",
-        price: "",
-        currency: "",
-        tax_pct: "",
-        quantity: "",
-      },
-    ],
   });
 
   useEffect(() => {
@@ -66,8 +32,6 @@ const ProfilePage = () => {
   // if (Object.entries(order).length === 0) {
   //   return;
   // }
-  const TotalPrice = order.items.reduce((e, u) => e + u.price * u.quantity, 0);
-  const TotalTax = order.items.reduce((e, u) => e + u.tax_pct * u.quantity, 0);
 
   return (
     <div className={classes.wrapper}>
