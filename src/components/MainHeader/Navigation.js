@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./Navigation.module.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = (props) => {
   return (
