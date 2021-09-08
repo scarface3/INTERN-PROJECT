@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import MainHeader from "./components/MainHeader/MainHeader";
 import Card from "./components/UI/Card";
 import ProfilePage from "./components/UI/Profilepage";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
   return (
